@@ -1,0 +1,179 @@
+<!doctype html>
+<html> 
+ <head><style type="text/css" id="dcoder_stylesheet">body {
+  background: rgba(110,211,196,1);
+}
+
+h1 {
+  margin: auto; 
+  font-size: 100px;
+  padding: 20px;
+}
+
+#area {
+  color: blue;
+  height: 20%;
+  width: 100%; 
+  background: black;
+  font-size: 100px;
+  
+ 
+}
+div .tecl1 {
+ color:  blue;
+ display: inline-block;
+}
+
+section {
+  width: 900px;
+  height: 1501px;
+  font-size: 30px;
+  margin: auto;
+  border-radius: 70px 70px 70px 70px;
+}
+
+.estilo {
+  position: relative;
+  top: -30px;
+  background: rgba(40,42,42,1);
+  width: 100%;
+  height: 85%;
+  border-radius: 0px 0px 70px 70px;
+} 
+
+.tecl1 {
+  border: solid 2px rgba(72,80,78,1);
+  font-size: 30px;
+  width: 23.5%;
+  height: 22%;
+  border-radius: 100px; 
+  text-align: center;
+  font-size: 100px;
+  
+}
+
+.move{
+  position: relative;
+ top: 60px;
+}
+
+.move01 {
+  position: relative;
+  top: 70px; 
+  float: right;
+  margin:  20px;
+  
+}</style></head> 
+ <body> 
+  <h1> Calculadora </h1> 
+  <section> 
+   <div id="area"> 
+    <div class="move01" id="rest" type="number">
+      
+    </div> 
+   </div> 
+   <div class="estilo"> 
+    <div class="tecl1" onclick="tecla('7')"> 
+     <div id="num7" class="move">
+       7 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('8')"> 
+     <div class="move">
+       8 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('9')"> 
+     <div class="move">
+       9 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('/')"> 
+     <div class="move">
+       ÷ 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('4')"> 
+     <div class="move">
+       4 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('5')"> 
+     <div class="move">
+       5 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('6')"> 
+     <div class="move">
+       6 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('*')"> 
+     <div class="move">
+       x 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('1')"> 
+     <div class="move">
+       1 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('2')"> 
+     <div class="move">
+       2 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('3')"> 
+     <div class="move">
+       3 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('-')"> 
+     <div class="move">
+       - 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('0')"> 
+     <div class="move">
+       0 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="apagar()"> 
+     <div class="move">
+       p 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="resultado()"> 
+     <div class="move">
+       = 
+     </div> 
+    </div> 
+    <div class="tecl1" onclick="tecla('+')"> 
+     <div class="move">
+       + 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+ 
+<script type="text/javascript" id="dcoder_script">function tecla(p) {
+var rest = document.getElementById('rest').innerHTML;
+
+document.getElementById('rest').innerHTML += p 
+
+
+}
+
+function resultado() {
+  var rest = document.getElementById('rest').innerHTML;
+    if (rest) {
+      document.getElementById('rest').innerHTML = eval(rest)    
+    } else {
+      document.getElementById('rest').innerHTML = 'nothing to calculate'
+    }
+}
+
+function apagar() {
+  var res = document.getElementById('rest').innerHTML;
+  document.getElementById('rest').innerHTML = ""
+}</script></body></html>
