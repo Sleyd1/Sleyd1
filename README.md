@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Sleyd1
+- 👋 Hi, I’m @Sleyd
 - 👀 I’m interested in learn various programming languages
 - 🌱 I’m currently learning html5,css, javascript & python 
 - 💞️ I’m looking to collaborate on with big companies but for nowh will I grow by doing simple projects because I'm starting now.
