@@ -34,4 +34,4 @@ Aqui é onde registro minha jornada de aprendizado no mundo da programação.<br
 ### 🔗 Conta principal
 
 📍 Projetos maiores e mais profissionais você encontra na minha conta principal:  
-👉 [@wesley](https://github.com/wesley)
+👉 [@wesley](https://github.com/WesleyJunio0)
